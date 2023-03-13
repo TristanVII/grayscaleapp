@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form action="/auth/login" method="POST">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+    </form>
+    <br />
+    <h1>Create User</h1>
+    <form action="/auth/signup" method="POST">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div>
+        <button type="submit">Sign Up</button>
+      </div>
+    </form>
+  </body>
+</html>
